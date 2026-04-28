@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title id="pageTitle">Bài viết – Đất Mũi Eco Farm</title>
+<meta name="description" id="metaDesc" content="">
+<meta property="og:title" id="ogTitle" content="">
+<meta property="og:description" id="ogDesc" content="">
+<meta property="og:image" id="ogImage" content="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<!-- Marked.js for Markdown rendering -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+:root{--green:#1A531A;--g2:#2E7D32;--g3:#4CAF50;--gold:#F0C040;--bg2:#F5F9F3;--gray:#4A5568;--lgray:#9CA3AF;--w:#fff}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Be Vietnam Pro',sans-serif;background:var(--bg2);color:var(--green)}
+a{text-decoration:none;color:var(--g2)}
+img{max-width:100%;display:block;border-radius:12px}
+.container{max-width:780px;margin:0 auto;padding:0 24px}
+.nav{background:rgba(255,255,255,.97);backdrop-filter:blur(18px);border-bottom:1px solid rgba(76,175,80,.12);padding:0 4vw;height:70px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50}
+.nav-logo .l1{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--green)}
+.nav-logo .l2{font-family:'Be Vietnam Pro',sans-serif;font-size:.9rem;font-weight:800;color:#D4A017;letter-spacing:.06em;text-transform:uppercase}
+.nav-back{font-family:'Be Vietnam Pro',sans-serif;font-size:.85rem;font-weight:600;color:var(--g2);display:flex;align-items:center;gap:6px;padding:8px 16px;border:1.5px solid rgba(76,175,80,.3);border-radius:100px;transition:all .2s}
+.nav-back:hover{background:var(--g3);color:#fff;border-color:var(--g3)}
+
+/* ARTICLE */
+.article-wrap{padding:48px 0 80px}
+.article-meta{display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.article-cat{font-family:'Be Vietnam Pro',sans-serif;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--g3);background:rgba(76,175,80,.1);padding:4px 12px;border-radius:100px}
+.article-date{font-family:'Be Vietnam Pro',sans-serif;font-size:.78rem;color:var(--lgray)}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,4vw,2.6rem);font-weight:700;color:var(--green);line-height:1.2;margin-bottom:16px}
+.article-summary{font-family:'Be Vietnam Pro',sans-serif;font-size:1.05rem;color:var(--gray);line-height:1.85;margin-bottom:28px;padding:16px 20px;background:rgba(76,175,80,.07);border-left:4px solid var(--g3);border-radius:0 10px 10px 0;font-style:italic}
+.hero-img{width:100%;border-radius:16px;margin-bottom:32px;box-shadow:0 8px 32px rgba(26,83,26,.12)}
+
+/* MARKDOWN CONTENT */
+.article-body{font-family:'Be Vietnam Pro',sans-serif;font-size:.97rem;color:#374151;line-height:1.9}
+.article-body h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--green);margin:36px 0 14px;padding-bottom:8px;border-bottom:2px solid rgba(76,175,80,.15)}
+.article-body h3{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--g2);margin:28px 0 10px}
+.article-body p{margin-bottom:18px}
+.article-body ul,.article-body ol{margin:12px 0 18px 24px}
+.article-body li{margin-bottom:6px;line-height:1.75}
+.article-body img{margin:24px auto;box-shadow:0 6px 24px rgba(0,0,0,.1)}
+.article-body blockquote{border-left:4px solid var(--g3);background:rgba(76,175,80,.06);padding:14px 20px;border-radius:0 10px 10px 0;margin:20px 0;font-style:italic;color:var(--g2)}
+.article-body strong{color:var(--green);font-weight:700}
+.article-body a{color:var(--g3);text-decoration:underline}
+.article-body code{background:rgba(76,175,80,.1);padding:2px 7px;border-radius:5px;font-size:.88rem}
+
+/* SHARE + NAV */
+.post-footer{margin-top:48px;padding-top:32px;border-top:1px solid rgba(76,175,80,.15);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.share-btns{display:flex;gap:10px}
+.share-btn{font-family:'Be Vietnam Pro',sans-serif;font-size:.8rem;font-weight:700;padding:8px 18px;border-radius:100px;display:flex;align-items:center;gap:6px;transition:all .2s;cursor:pointer;border:none}
+.share-fb{background:#1877F2;color:#fff}
+.share-fb:hover{background:#1558b0}
+.share-zalo{background:#0068FF;color:#fff}
+.share-copy{background:rgba(76,175,80,.1);color:var(--g2);border:1.5px solid rgba(76,175,80,.25)}
+.share-copy:hover{background:var(--g3);color:#fff}
+.back-blog{font-family:'Be Vietnam Pro',sans-serif;font-size:.85rem;font-weight:600;color:var(--g2);display:flex;align-items:center;gap:6px}
+.back-blog:hover{color:var(--green)}
+
+.mini-footer{background:var(--green);padding:20px 0;text-align:center}
+.mini-footer p{font-family:'Be Vietnam Pro',sans-serif;font-size:.75rem;color:rgba(255,255,255,.45)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <div><div class="l1">Đất Mũi</div><div class="l2">ECO FARM</div></div>
+  </a>
+  <a href="blog.html" class="nav-back">
+    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    Về trang Blog
+  </a>
+</nav>
+
+<div class="article-wrap">
+  <div class="container">
+    <div class="article-meta">
+      <span class="article-cat" id="articleCat">Tin tức</span>
+      <span class="article-date" id="articleDate"></span>
+    </div>
+    <h1 class="article-title" id="articleTitle">Đang tải bài viết...</h1>
+    <div class="article-summary" id="articleSummary" style="display:none"></div>
+    <img id="heroImg" class="hero-img" style="display:none" alt="">
+    <div class="article-body" id="articleBody"></div>
+    <div class="post-footer">
+      <div class="share-btns">
+        <button class="share-btn share-fb" onclick="shareFb()">Chia sẻ Facebook</button>
+        <button class="share-btn share-zalo" onclick="shareZalo()">Zalo</button>
+        <button class="share-btn share-copy" onclick="copyLink()">Sao chép link</button>
+      </div>
+      <a href="blog.html" class="back-blog">
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+        Xem thêm bài viết
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="mini-footer"><p>© 2025 Đất Mũi Eco Farm</p></footer>
+
+<script>
+// Get slug from URL
+const params = new URLSearchParams(location.search);
+const slug = params.get('slug');
+const catLabels = {'tin-tuc':'Tin tức vườn','suc-khoe':'Sức khỏe','canh-tac':'Canh tác','cong-dong':'Cộng đồng'};
+
+async function loadPost() {
+  if (!slug) { document.getElementById('articleTitle').textContent = 'Bài viết không tồn tại'; return; }
+  try {
+    const res = await fetch('posts.json');
+    if (!res.ok) throw new Error();
+    const posts = await res.json();
+    const post = posts.find(p => (p.slug || p.title.toLowerCase().replace(/[^a-z0-9]+/g,'-')) === slug);
+    if (!post) { document.getElementById('articleTitle').textContent = 'Không tìm thấy bài viết'; return; }
+    
+    // Set meta tags dynamically
+    document.title = (post.seo?.title || post.title) + ' – Đất Mũi Eco Farm';
+    document.getElementById('pageTitle').textContent = document.title;
+    document.getElementById('metaDesc').content = post.seo?.description || post.summary || '';
+    document.getElementById('ogTitle').content = post.title;
+    document.getElementById('ogDesc').content = post.summary || '';
+    if (post.featured_image) document.getElementById('ogImage').content = post.featured_image;
+    
+    // Render content
+    document.getElementById('articleTitle').textContent = post.title;
+    document.getElementById('articleDate').textContent = post.date || '';
+    document.getElementById('articleCat').textContent = catLabels[post.category] || post.category || 'Bài viết';
+    
+    if (post.summary) {
+      const s = document.getElementById('articleSummary');
+      s.textContent = post.summary;
+      s.style.display = 'block';
+    }
+    if (post.featured_image) {
+      const h = document.getElementById('heroImg');
+      h.src = post.featured_image;
+      h.alt = post.title;
+      h.style.display = 'block';
+    }
+    document.getElementById('articleBody').innerHTML = marked.parse(post.body || '');
+  } catch(e) {
+    document.getElementById('articleBody').innerHTML = '<p style="color:#9CA3AF">Không thể tải bài viết. <a href="blog.html">← Về trang Blog</a></p>';
+  }
+}
+
+function shareFb() { window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'_blank'); }
+function shareZalo() { window.open('https://zalo.me/share/url?url='+encodeURIComponent(location.href),'_blank'); }
+function copyLink() {
+  navigator.clipboard.writeText(location.href).then(() => {
+    const btn = document.querySelector('.share-copy');
+    btn.textContent = '✓ Đã sao chép!';
+    setTimeout(() => btn.textContent = 'Sao chép link', 2000);
+  });
+}
+
+loadPost();
+</script>
+</body>
+</html>
