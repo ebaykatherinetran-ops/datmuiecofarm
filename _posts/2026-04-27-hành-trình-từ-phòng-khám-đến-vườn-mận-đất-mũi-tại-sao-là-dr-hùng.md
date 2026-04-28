@@ -2,7 +2,7 @@
 title: "Hành Trình Từ Phòng Khám Đến Vườn Mận Đất Mũi: Tại Sao Là Dr. Hùng?"
 date: 2026-04-28
 featured_image: /images/uploads/cổng-vào.jpg
-summary: Tại sao một bác sĩ 30 năm kinh nghiệm lại từ phòng khám để trồng mận?
+summary: Tại sao một bác sĩ 30 năm kinh nghiệm lại từ phòng khám đến trồng mận?
   Khám phá câu chuyện đầy cảm hứng của Dr. Hùng — người đã biến tâm huyết y đức
   thành những trái Mận Hồng ST sạch, giòn, ngọt tự nhiên tại mảnh đất tận cùng
   Tổ quốc.
