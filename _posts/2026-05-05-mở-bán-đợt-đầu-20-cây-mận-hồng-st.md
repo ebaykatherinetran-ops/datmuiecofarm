@@ -11,7 +11,7 @@ summary: >-
 
   Đây là cơ hội để bạn nắm giữ một phần của khu vườn sạch, nơi từng trái mận được chăm sóc bằng tư duy của một bác sĩ — cẩn trọng, khoa học và đầy trách nhiệm.
 seo:
-  title: cây mận
+  title: ""
 category: tin-tuc
 ---
 Đợt mở bán đầu tiên 20 cây mận Hồng ST tại Đất Mũi Eco Farm không chỉ là một sự kiện giới hạn về số lượng, mà còn là lời mời dành cho những ai thực sự quan tâm đến sức khỏe, nguồn thực phẩm sạch và giá trị bền vững lâu dài. Được chăm sóc theo phương pháp canh tác hoàn toàn hữu cơ, mỗi cây mận là kết quả của hơn 10 năm nghiên cứu, thử nghiệm và kiên trì theo đuổi một con đường nông nghiệp không hóa chất — nơi mà từng yếu tố từ đất, nước đến cách bảo vệ trái đều được kiểm soát chặt chẽ như một quy trình y khoa.
