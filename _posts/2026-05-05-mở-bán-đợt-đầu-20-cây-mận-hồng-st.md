@@ -1,6 +1,7 @@
 ---
 title: Mở Bán Đợt Đầu 20 Cây Mận Hồng ST
 date: 2026-05-06
+featured_image: /images/uploads/z7797788876300_74bc248d08a1c9749ed4c37afb877566.jpg
 summary: >-
   Sau hơn 10 năm kiên trì canh tác sạch tại Cà Mau, Đất Mũi Eco Farm chính thức
   mở bán 20 cây mận Hồng ST đầu tiên — một cột mốc đặc biệt đánh dấu hành trình
